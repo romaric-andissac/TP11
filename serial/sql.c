@@ -17,7 +17,7 @@ int main(void)
         fprintf(stderr, "DB Connection Error\n");
         return EXIT_FAILURE;
     }
-    if (mysql_query(conn, "INSERT INTO capteurs (test) VALUES ('Hello World')") != 0)
+    if (mysql_query(conn, "INSERT INTO mesures (temperature) VALUES ('20')") != 0)
     {
         fprintf(stderr, "Query Failure\n");
         return EXIT_FAILURE;
